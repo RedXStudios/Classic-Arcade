@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*            
+ *            Author: Jeff Thwaites
+ *        Class Name: StackBlocks.cs
+ * Class Description: Manages StackBlocks form. contains all components
+ *                    necessary to replicate a game of Tetris
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,52 +14,68 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ClassicArcade
 {
     public partial class StackBlocks : Form
     {
-        private int hScore, cScore;
+        private int hScore, cScore;//Initialize highscore and currentscore variables
+        StreamReader reader;
+        StreamWriter writer;
 
-        public StackBlocks()
+        public StackBlocks()//method to initialize StackBlocks game
         {
+            Globals g = new Globals();//import Globals class for use of getHighScore method
+
+            hScore = g.getHighScore("STACKBLOCKS");//retrieve stackblocks highscore
+            cScore = 0;
+
             InitializeComponent();
+            hScoreLabel.Text = hScore.ToString();//set highscore label to highscore
+            cScoreLabel.Text = cScore.ToString();//set current score label to current score
+            runGame();//call main method
         }
 
-        private void pauseb_Click(object sender, EventArgs e)
+        public void runGame()//main method for running the game and its components
         {
-            if (pauseB.Text == "Pause")
+            
+        }
+
+        private void pauseb_Click(object sender, EventArgs e)//if pause/resume button is clicked
+        {
+            if (pauseB.Text == "Pause")//if game is paused, stop timer and change button text to "resume"
             {
                 dropTimer.Stop();
                 pauseB.Text = "Resume";
             }
-            else
+            else//start timer and change button text to "pause"
             {
                 dropTimer.Start();
                 pauseB.Text = "Pause";
             }
         }
 
-        private void exitB_Click(object sender, EventArgs e)
+        private void exitB_Click(object sender, EventArgs e)//if exit button is clicked
         {
             DialogResult result;
 
-            if (pauseB.Text == "Pause")
+            if (pauseB.Text == "Pause")//Pause game if it isn't already
             {
                 dropTimer.Stop();
                 pauseB.Text = "Resume";
             }
 
-            result = MessageBox.Show("Are you sure?\n(All progress will be lost)", "Confirm", MessageBoxButtons.YesNo);
+            result = MessageBox.Show("Are you sure?\n(All progress will be lost)", "Confirm", MessageBoxButtons.YesNo);//ask user to confirm if they want to quit
 
-            if (result == DialogResult.Yes)
+            if (result == DialogResult.Yes)//if yes is chosen, close StackBlocks form and reopen GameSelect form
             {
                 gameSelect gameSlct = new gameSelect();
 
                 gameSlct.Show();
-                this.Close();//test when ur back
+                this.Close();
             }
-            else
+            else//if no is chosen, resume game
             {
                 dropTimer.Start();
                 pauseB.Text = "Pause";
@@ -93,7 +116,7 @@ namespace ClassicArcade
                     next5.Visible = true;
                     next6.Visible = true;
                     break;
-                default:
+                default://no block
                     next1.Visible = false;
                     next2.Visible = false;
                     next3.Visible = false;

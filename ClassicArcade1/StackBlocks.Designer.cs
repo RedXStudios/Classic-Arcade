@@ -123,10 +123,13 @@
             this.next4 = new System.Windows.Forms.PictureBox();
             this.next7 = new System.Windows.Forms.PictureBox();
             this.next8 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pauseB = new System.Windows.Forms.Button();
             this.dropTimer = new System.Windows.Forms.Timer(this.components);
             this.exitB = new System.Windows.Forms.Button();
+            this.sLabel = new System.Windows.Forms.Label();
+            this.hsLabel = new System.Windows.Forms.Label();
+            this.cScoreLabel = new System.Windows.Forms.Label();
+            this.hScoreLabel = new System.Windows.Forms.Label();
             this.blockGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.block12_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.block12_6)).BeginInit();
@@ -1106,7 +1109,7 @@
             // next1
             // 
             this.next1.BackColor = System.Drawing.Color.Red;
-            this.next1.Location = new System.Drawing.Point(35, 621);
+            this.next1.Location = new System.Drawing.Point(39, 627);
             this.next1.Name = "next1";
             this.next1.Size = new System.Drawing.Size(20, 20);
             this.next1.TabIndex = 3;
@@ -1116,7 +1119,7 @@
             // next2
             // 
             this.next2.BackColor = System.Drawing.Color.Red;
-            this.next2.Location = new System.Drawing.Point(15, 641);
+            this.next2.Location = new System.Drawing.Point(19, 647);
             this.next2.Name = "next2";
             this.next2.Size = new System.Drawing.Size(20, 20);
             this.next2.TabIndex = 5;
@@ -1126,7 +1129,7 @@
             // next3
             // 
             this.next3.BackColor = System.Drawing.Color.Red;
-            this.next3.Location = new System.Drawing.Point(35, 641);
+            this.next3.Location = new System.Drawing.Point(39, 647);
             this.next3.Name = "next3";
             this.next3.Size = new System.Drawing.Size(20, 20);
             this.next3.TabIndex = 6;
@@ -1136,7 +1139,7 @@
             // next6
             // 
             this.next6.BackColor = System.Drawing.Color.Red;
-            this.next6.Location = new System.Drawing.Point(35, 661);
+            this.next6.Location = new System.Drawing.Point(39, 667);
             this.next6.Name = "next6";
             this.next6.Size = new System.Drawing.Size(20, 20);
             this.next6.TabIndex = 7;
@@ -1146,7 +1149,7 @@
             // next5
             // 
             this.next5.BackColor = System.Drawing.Color.Red;
-            this.next5.Location = new System.Drawing.Point(15, 661);
+            this.next5.Location = new System.Drawing.Point(19, 667);
             this.next5.Name = "next5";
             this.next5.Size = new System.Drawing.Size(20, 20);
             this.next5.TabIndex = 8;
@@ -1156,7 +1159,7 @@
             // next4
             // 
             this.next4.BackColor = System.Drawing.Color.Red;
-            this.next4.Location = new System.Drawing.Point(55, 641);
+            this.next4.Location = new System.Drawing.Point(59, 647);
             this.next4.Name = "next4";
             this.next4.Size = new System.Drawing.Size(20, 20);
             this.next4.TabIndex = 9;
@@ -1166,7 +1169,7 @@
             // next7
             // 
             this.next7.BackColor = System.Drawing.Color.Red;
-            this.next7.Location = new System.Drawing.Point(55, 661);
+            this.next7.Location = new System.Drawing.Point(59, 667);
             this.next7.Name = "next7";
             this.next7.Size = new System.Drawing.Size(20, 20);
             this.next7.TabIndex = 10;
@@ -1176,23 +1179,12 @@
             // next8
             // 
             this.next8.BackColor = System.Drawing.Color.Red;
-            this.next8.Location = new System.Drawing.Point(35, 681);
+            this.next8.Location = new System.Drawing.Point(39, 687);
             this.next8.Name = "next8";
             this.next8.Size = new System.Drawing.Size(20, 20);
             this.next8.TabIndex = 11;
             this.next8.TabStop = false;
             this.next8.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Gray;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 700);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 17);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Next";
             // 
             // pauseB
             // 
@@ -1224,15 +1216,62 @@
             this.exitB.UseVisualStyleBackColor = false;
             this.exitB.Click += new System.EventHandler(this.exitB_Click);
             // 
+            // sLabel
+            // 
+            this.sLabel.AutoSize = true;
+            this.sLabel.BackColor = System.Drawing.Color.Gray;
+            this.sLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sLabel.Location = new System.Drawing.Point(143, 673);
+            this.sLabel.Name = "sLabel";
+            this.sLabel.Size = new System.Drawing.Size(66, 17);
+            this.sLabel.TabIndex = 17;
+            this.sLabel.Text = "SCORE:";
+            // 
+            // hsLabel
+            // 
+            this.hsLabel.AutoSize = true;
+            this.hsLabel.BackColor = System.Drawing.Color.Gray;
+            this.hsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hsLabel.Location = new System.Drawing.Point(105, 690);
+            this.hsLabel.Name = "hsLabel";
+            this.hsLabel.Size = new System.Drawing.Size(104, 17);
+            this.hsLabel.TabIndex = 18;
+            this.hsLabel.Text = "HIGHSCORE:";
+            // 
+            // cScoreLabel
+            // 
+            this.cScoreLabel.AutoSize = true;
+            this.cScoreLabel.BackColor = System.Drawing.Color.Gray;
+            this.cScoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cScoreLabel.Location = new System.Drawing.Point(204, 673);
+            this.cScoreLabel.Name = "cScoreLabel";
+            this.cScoreLabel.Size = new System.Drawing.Size(17, 17);
+            this.cScoreLabel.TabIndex = 19;
+            this.cScoreLabel.Text = "0";
+            // 
+            // hScoreLabel
+            // 
+            this.hScoreLabel.AutoSize = true;
+            this.hScoreLabel.BackColor = System.Drawing.Color.Gray;
+            this.hScoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hScoreLabel.Location = new System.Drawing.Point(204, 690);
+            this.hScoreLabel.Name = "hScoreLabel";
+            this.hScoreLabel.Size = new System.Drawing.Size(17, 17);
+            this.hScoreLabel.TabIndex = 20;
+            this.hScoreLabel.Text = "0";
+            // 
             // StackBlocks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(374, 730);
+            this.Controls.Add(this.hScoreLabel);
+            this.Controls.Add(this.cScoreLabel);
+            this.Controls.Add(this.hsLabel);
+            this.Controls.Add(this.sLabel);
             this.Controls.Add(this.exitB);
             this.Controls.Add(this.pauseB);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.next8);
             this.Controls.Add(this.next7);
             this.Controls.Add(this.next4);
@@ -1442,9 +1481,12 @@
         private System.Windows.Forms.PictureBox next4;
         private System.Windows.Forms.PictureBox next7;
         private System.Windows.Forms.PictureBox next8;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button pauseB;
         private System.Windows.Forms.Timer dropTimer;
         private System.Windows.Forms.Button exitB;
+        private System.Windows.Forms.Label sLabel;
+        private System.Windows.Forms.Label hsLabel;
+        private System.Windows.Forms.Label cScoreLabel;
+        private System.Windows.Forms.Label hScoreLabel;
     }
 }

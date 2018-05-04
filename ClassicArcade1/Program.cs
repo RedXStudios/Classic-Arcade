@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*            
+ *            Author: Jeff Thwaites
+ *        Class Name: Program.cs
+ * Class Description: Main program class that starts the program
+ *                    and opens GameSelect form
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,12 +19,11 @@ namespace ClassicArcade
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main()//Start program and open GameSelect form by default
         {
             gameSelect gameSlct = new gameSelect();
 
             Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
             gameSlct.Show();
             Application.Run();
         }

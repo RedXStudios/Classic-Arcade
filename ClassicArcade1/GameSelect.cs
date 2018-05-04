@@ -14,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ClassicArcade
 {
@@ -22,6 +23,17 @@ namespace ClassicArcade
         public gameSelect()
         {
             InitializeComponent();
+
+            if (!File.Exists(Globals.savePath))//if savefile doesnt exist, create it. format: name of game with highscore on next line (0 by default)
+            {
+                using (StreamWriter writer = File.CreateText(Globals.savePath))
+                {
+                    writer.WriteLine("STACKBLOCKS");
+                    writer.WriteLine("0");
+                    writer.WriteLine("SUDOKU");
+                    writer.WriteLine("0");
+                }
+            }
         }
 
         private void StackBlocks_Click(object sender, EventArgs e)
