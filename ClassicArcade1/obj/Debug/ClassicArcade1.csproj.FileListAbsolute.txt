@@ -1,0 +1,11 @@
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\bin\Debug\ClassicArcade1.exe.config
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\bin\Debug\ClassicArcade1.exe
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\bin\Debug\ClassicArcade1.pdb
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade1.csprojResolveAssemblyReference.cache
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade.gameSelect.resources
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade.Properties.Resources.resources
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade.StackBlocks.resources
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade1.csproj.GenerateResource.cache
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade1.csproj.CoreCompileInputs.cache
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade1.exe
+C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade1.pdb

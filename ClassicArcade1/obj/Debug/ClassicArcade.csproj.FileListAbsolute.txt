@@ -1,0 +1,11 @@
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\bin\Debug\ClassicArcade.exe.config
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\bin\Debug\ClassicArcade.exe
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\bin\Debug\ClassicArcade.pdb
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\obj\Debug\ClassicArcade.csprojResolveAssemblyReference.cache
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\obj\Debug\ClassicArcade.GameSelect.resources
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\obj\Debug\ClassicArcade.Properties.Resources.resources
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\obj\Debug\ClassicArcade.csproj.GenerateResource.cache
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\obj\Debug\ClassicArcade.csproj.CoreCompileInputs.cache
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\obj\Debug\ClassicArcade.exe
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\obj\Debug\ClassicArcade.pdb
+C:\Users\Jeff\AppData\Local\Temporary Projects\ClassicArcade\obj\Debug\ClassicArcade.StackBlocks.resources
