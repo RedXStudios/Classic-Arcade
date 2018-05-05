@@ -9,3 +9,13 @@ C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade
 C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade1.csproj.CoreCompileInputs.cache
 C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade1.exe
 C:\Users\Jeff\source\repos\ClassicArcade1\ClassicArcade1\obj\Debug\ClassicArcade1.pdb
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\bin\Debug\ClassicArcade1.exe.config
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\bin\Debug\ClassicArcade1.exe
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\bin\Debug\ClassicArcade1.pdb
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\obj\Debug\ClassicArcade1.csprojResolveAssemblyReference.cache
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\obj\Debug\ClassicArcade.gameSelect.resources
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\obj\Debug\ClassicArcade.Properties.Resources.resources
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\obj\Debug\ClassicArcade.StackBlocks.resources
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\obj\Debug\ClassicArcade1.csproj.GenerateResource.Cache
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\obj\Debug\ClassicArcade1.exe
+C:\Users\ABRVX\Documents\Visual Studio 2017\Projects\ClassicArcade\ClassicArcade1\obj\Debug\ClassicArcade1.pdb

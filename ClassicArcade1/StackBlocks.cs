@@ -34,12 +34,16 @@ namespace ClassicArcade
             InitializeComponent();
             hScoreLabel.Text = hScore.ToString();//set highscore label to highscore
             cScoreLabel.Text = cScore.ToString();//set current score label to current score
+            dropTimer.Start();
             runGame();//call main method
         }
 
         public void runGame()//main method for running the game and its components
         {
-            
+            Random rand = new Random();
+            int i;
+
+            i = rand.Next(5);
         }
 
         private void pauseb_Click(object sender, EventArgs e)//if pause/resume button is clicked
@@ -86,31 +90,36 @@ namespace ClassicArcade
         {
             switch (blockType)//Specified block type
             {
-                case 1: //Line block
+                case 0: //Line block
+                    setNextColor(Color.Orange);
                     next1.Visible = true;
                     next3.Visible = true;
                     next6.Visible = true;
                     next8.Visible = true;
                     break;
-                case 2: //Right facing L block
+                case 1: //Right facing L block
+                    setNextColor(Color.Blue);
                     next2.Visible = true;
                     next5.Visible = true;
                     next6.Visible = true;
                     next7.Visible = true;
                     break;
-                case 3: //Left facing L block
+                case 2: //Left facing L block
+                    setNextColor(Color.Red);
                     next4.Visible = true;
                     next5.Visible = true;
                     next6.Visible = true;
                     next7.Visible = true;
                     break;
-                case 4: //T block
+                case 3: //T block
+                    setNextColor(Color.Yellow);
                     next2.Visible = true;
                     next3.Visible = true;
                     next4.Visible = true;
                     next6.Visible = true;
                     break;
-                case 5: //2x2 block
+                case 4: //2x2 block
+                    setNextColor(Color.Green);
                     next2.Visible = true;
                     next3.Visible = true;
                     next5.Visible = true;
@@ -127,6 +136,18 @@ namespace ClassicArcade
                     next8.Visible = false;
                     break;
             }
+        }
+
+        public void setNextColor(Color color)
+        {
+            next1.BackColor = color;
+            next2.BackColor = color;
+            next3.BackColor = color;
+            next4.BackColor = color;
+            next5.BackColor = color;
+            next6.BackColor = color;
+            next7.BackColor = color;
+            next8.BackColor = color;
         }
     }
 }

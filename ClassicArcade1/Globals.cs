@@ -31,7 +31,6 @@ namespace ClassicArcade
                     reader.ReadLine();//skip score of read game to cut amount of loops in half
                 }
 
-
                 int.TryParse(reader.ReadLine(), out highScore);//once current game is found in save file, 
                                                                //read highscore and pass it into highScore variable
             }
